@@ -64,6 +64,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                
             ],
         },
     },
@@ -122,6 +123,6 @@ USE_TZ = True
 
 STATIC_ROOT= os.path.join(BASE_DIR,'static')
 STATIC_URL = '/static/'
-STATICFILES_DIR= [
+STATICFILES_DIRS= [
     os.path.join(BASE_DIR,'btre/static')
 ]
