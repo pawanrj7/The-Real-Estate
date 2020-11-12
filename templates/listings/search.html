@@ -9,12 +9,12 @@
                     <div class="form-row">
                         <div class="col-md-4 mb-3">
                             <label class="sr-only">Keywords</label>
-                            <input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)">
+                            <input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)" value="{{ values.keywords }}">
                         </div>
 
                         <div class="col-md-4 mb-3">
                             <label class="sr-only">City</label>
-                            <input type="text" name="city" class="form-control" placeholder="City">
+                            <input type="text" name="city" class="form-control" placeholder="City" value="{{ values.city }}">
                         </div>
 
                         <div class="col-md-4 mb-3">
@@ -122,7 +122,9 @@
             </div>
             {%endfor%}
         {% else %}
-            <p>There is no listing in search list </p>
+            <div class="col-md-12 ">
+                <p>There is no listing.</p>
+            </div>
         {% endif %}
         </div>
     </div>
